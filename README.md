@@ -27,4 +27,4 @@ When the game is running, the hero starts in the upper left corner of the maze. 
 ## Notes
 There are some errors in the game:
 - when the system renders two enemies on the same tile, they cannot be killed, and their HP will go below zero
-- when the hero is killed, he is still able to move around the maze, but can not level up 
+- when the hero levels up, he will not gain any actual health, only his hp capacity grows
