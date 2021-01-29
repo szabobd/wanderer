@@ -18,7 +18,7 @@ The project contains seven .py files (area, hero, enemies, cell, grid, gamelogic
 4. Double click gamelogic.py
 
 ## Gameplay
-When the game is running, the hero starts in the upper left corner of the maze. The hero needs to kill the boss and the skleton with the key to move on to the next level. The heros stats can be seen in the bottom, on a white rectangle. When in a battle with an enemy (hero on the same tile as the enemy), the stats of the enemy can be seen on this part as well. As long as the enemy standing on the same tile as the hero is alive, the hero can't move to other tiles. When the hero's life is less than 1, the HUD will say he is dead, and he cannot level up to the next area.
+When the game is running, the hero starts in the upper left corner of the maze. The hero needs to kill the boss and the skleton with the key to move on to the next level. The heros stats can be seen in the bottom, on a white rectangle. When in a battle with an enemy (hero on the same tile as the enemy), the stats of the enemy can be seen on this part as well. As long as the enemy standing on the same tile as the hero is alive, the hero can't move to other tiles. When the hero's life is less than 1, the HUD will say he is dead, and he cannot move. When the hero kill the boss and the skeleton with the key, he levels up, his stats go up and enters a new level with stronger enemies.
 
 ## Controls
 - To move around, use `WASD`: move up = `W`, move down = `S`, move right = `D`, move left = `A`
@@ -26,5 +26,5 @@ When the game is running, the hero starts in the upper left corner of the maze. 
 
 ## Notes
 There are some errors in the game:
-- when the system renders two enemies on the same tile, they cannot be killed, and their HP will go below zero
+- when the system renders two enemies on the same tile, and the hero enters that tile, they cannot be killed, as their HP will go below zero but the hero won't be able to move
 - when the hero levels up, he will not gain any actual health, only his hp capacity grows
